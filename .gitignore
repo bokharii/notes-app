@@ -1,0 +1,21 @@
+# Node modules
+notes-app-backend/node_modules
+
+# Logs
+logs/
+*.log
+
+# Environment variables
+notes-app-backend/.env
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS generated files
+.DS_Store
+Thumbs.db

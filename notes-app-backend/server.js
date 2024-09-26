@@ -16,6 +16,12 @@ mongoose
   .then(() => console.log("MongoDB connected..."))
   .catch((err) => console.log(err));
 
+const noteSchema = new mongoose.Schema({
+  title: { type: String, required: true },
+  content: { type: String, required: true },
+  date: { type: Date, default: Date.now },
+});
+
 const Note = mongoose.model("Note", noteSchema);
 
 app.get("/", (req, res) => {
@@ -31,4 +37,9 @@ app.post("/api/notes", async (req, res) => {
   } catch (error) {
     res.status(400).json({ message: error.message });
   }
+});
+
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`server is running on port: ${PORT}`);
 });
