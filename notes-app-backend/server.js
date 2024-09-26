@@ -26,6 +26,7 @@ app.get("/", (req, res) => {
   res.send("Welcome to my Notes API!");
 });
 
+
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
   console.log(`server is running on port: ${PORT}`);

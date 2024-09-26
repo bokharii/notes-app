@@ -1,12 +1,14 @@
 # Node modules
-notes-app-backend/node_modules
+notes-app-backend/node_modules/
 
 # Logs
 logs/
 *.log
 
+node_modules/
+
 # Environment variables
-notes-app-backend/.env
+notes-app-backend/.env/
 
 # Build output
 dist/
